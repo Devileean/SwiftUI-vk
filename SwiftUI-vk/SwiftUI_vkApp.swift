@@ -11,7 +11,9 @@ import SwiftUI
 struct SwiftUI_vkApp: App {
     var body: some Scene {
         WindowGroup {
-            AuthorizationView()
+            LoginView(login: "", password: "", isUserLoggedIn: true)
+           // FriendsView()
+           // MyGroupsView()
         }
     }
 }
