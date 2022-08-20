@@ -9,30 +9,44 @@ import SwiftUI
 
 struct FriendsView: View {
     var body: some View {
-        NavigationView {
-            List{
-            HStack{
-                AvatarImage{
-                Image("leonardo")
         
+        NavigationView {
+            
+            List{
+                ScrollView{
+                    HStack{
+                        AvatarImage{
+                            Image("leonardo")
+                                
+                            
+                        }
+                        .padding(/*@START_MENU_TOKEN@*/.all, 3.0/*@END_MENU_TOKEN@*/)
+                        
+                        VStack(alignment: .leading){
+                            Text("Leonardo Di Kaprio")
+                            
+                                .navigationBarTitle("Friends", displayMode: .large)
+                            //Spacer()
+                                .padding(.leading)
+                            Text("Online")
+                                .font(.footnote)
+                                .foregroundColor(Color(hue: 0.379, saturation: 0.842, brightness: 0.901))
+                                .fontWeight(.thin)
+                                .padding(.leading)
+                            
+                        }
+                    }
                 }
-                VStack(alignment: .leading){
-                    Text("Leonardo Di Kaprio")
-                .navigationBarTitle("Friends", displayMode: .inline)
-                    //Spacer()
-                .padding()
-                Text("Online")
-                        .font(.footnote)
-                        .foregroundColor(.green)
-                        .fontWeight(.thin)
-                        .padding(.top)
-                   
+                .listRowBackground(Color(red: 0.308, green: 0.482, blue: 0.745))
+                //.cornerRadius(18)
+                
             }
-               
-            }
-            } .listRowBackground(Color(red: 0.308, green: 0.482, blue: 0.745))
+            
+            
+        }
+        // .padding(.bottom)
+        
     }
-}
 }
 struct FriendsView_Previews: PreviewProvider {
     static var previews: some View {

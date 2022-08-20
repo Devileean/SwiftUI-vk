@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4936480B28B16659008B3A31 /* GroupPresentationImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4936480A28B16659008B3A31 /* GroupPresentationImageView.swift */; };
 		496BAB87287E2375002D3FC5 /* SwiftUI_vkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496BAB86287E2375002D3FC5 /* SwiftUI_vkApp.swift */; };
 		496BAB8B287E2377002D3FC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 496BAB8A287E2377002D3FC5 /* Assets.xcassets */; };
 		496BAB8E287E2377002D3FC5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 496BAB8D287E2377002D3FC5 /* Preview Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4936480A28B16659008B3A31 /* GroupPresentationImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupPresentationImageView.swift; sourceTree = "<group>"; };
 		496BAB83287E2375002D3FC5 /* SwiftUI-vk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-vk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		496BAB86287E2375002D3FC5 /* SwiftUI_vkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_vkApp.swift; sourceTree = "<group>"; };
 		496BAB8A287E2377002D3FC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -50,6 +52,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4936480928B16625008B3A31 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				49FCD99928A460F1007E19AB /* GroupsView.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		496BAB7A287E2375002D3FC5 = {
 			isa = PBXGroup;
 			children = (
@@ -185,7 +195,8 @@
 		49FCD99628A4609C007E19AB /* View */ = {
 			isa = PBXGroup;
 			children = (
-				49FCD99928A460F1007E19AB /* GroupsView.swift */,
+				4936480928B16625008B3A31 /* Cell */,
+				4936480A28B16659008B3A31 /* GroupPresentationImageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -264,6 +275,7 @@
 				496C226428A9884D001B8615 /* AvatarImageView.swift in Sources */,
 				49E6884628A30CFA002485E6 /* FriendModel.swift in Sources */,
 				49FCD99528A46087007E19AB /* GroupModel.swift in Sources */,
+				4936480B28B16659008B3A31 /* GroupPresentationImageView.swift in Sources */,
 				49FCD99228A4606B007E19AB /* GroupViewModel.swift in Sources */,
 				496C226A28A989B5001B8615 /* CircleShadowViewModifier.swift in Sources */,
 				49E6884428A30CD7002485E6 /* FriendViewModel.swift in Sources */,
